@@ -9,4 +9,4 @@ RUN \
   make && \
   make install
 
-ENTRYPOINT [ "nutcracker" ]
+ENTRYPOINT [ "nutcracker", "-c /etc/twemproxy/twemproxy.yaml" ]
